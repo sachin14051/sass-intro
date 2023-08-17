@@ -1,3 +1,25 @@
-@import "./component/var";
-@import "./component/mixins";
-@import "./component/header";
+@import "./abstract/var";
+@import "./abstract/mixins";
+
+@import "./base/anamitions";
+@import "./base/typograpgy";
+
+@import "./components/buttons";
+@import "./components/forms";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/about";
+
+@import "./pages/about";
+@import "./pages/home";
+ 
+
+
+
+
+
+
+
+
+
