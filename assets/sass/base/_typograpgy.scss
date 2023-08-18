@@ -1,3 +1,34 @@
 .text-center{
     text-align: center;
 }
+
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    background-image: linear-gradient(to right , $color-primary-light,$color-primary-dark);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 8rem;
+
+&:hover,
+&:focus{
+    transform: scale(1.1);
+    text-shadow: 0.5rem, 1rem, 2rem,  rgba(0,0,0,.2);
+}
+}
+
+.heading-ter {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.para{
+    font-size: 1.6rem;
+    &:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}

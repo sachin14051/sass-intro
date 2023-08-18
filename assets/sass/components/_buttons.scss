@@ -38,3 +38,26 @@
   }
 }
 
+.btn-text{
+  &,
+  &:link,
+  &:visited{
+     color: $color-primary;
+     padding:0.3rem ;
+     text-decoration: none;
+     border-bottom: 1px solid $color-primary;
+     display: inline-block;
+     font-size: 1.6rem;
+     text-transform: capitalize;
+     transition: all o.4s ease-in-out;
+   
+     &:hover,
+     &:focus{
+      background-color: $color-primary;
+      color: $color-white;
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+     }
+  }
+}
+
