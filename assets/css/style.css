@@ -1,0 +1,104 @@
+@keyframes moveright {
+  0% {
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(10rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-10rem); }
+  100% {
+    transform: translateX(0); } }
+
+.text-center {
+  text-align: center; }
+
+.btn, .btn:link, .btn:visited {
+  padding: 1rem 4rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  position: relative; }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+  .btn-white::before {
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10rem;
+    transition: all .4s ease-in-out; }
+
+.btn:hover {
+  transform: translateY(-1.5rem);
+  box-shadow: 0 0 1rem 0.8rem #777; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(85, 197, 122, 0.8)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 98%); }
+  .header .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 3.5rem; }
+    .header .logo img {
+      height: 100%; }
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .header-primary {
+    color: #fff;
+    text-transform: uppercase; }
+    .header .header-primary-main {
+      display: block;
+      margin-bottom: 5rem;
+      font-size: 6rem;
+      letter-spacing: 3rem;
+      font-weight: 400;
+      animation: moveright 4s ease-in-out; }
+    .header .header-primary-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.7rem;
+      animation: moveleft 4s ease-in-out;
+      margin-bottom: 5rem; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  padding: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Lato', sans-serif;
+  position: relative; }

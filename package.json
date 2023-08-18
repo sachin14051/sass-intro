@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass" : "node-sass assets/sass/style.scss assets/css/style.css -w"
+    "compile:sass": "node-sass assets/sass/style.scss assets/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.2"
+
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
