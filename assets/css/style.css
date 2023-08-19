@@ -146,7 +146,7 @@
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(85, 197, 122, 0.8)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,6 +181,35 @@
       letter-spacing: 1.7rem;
       animation: moveleft 4s ease-in-out;
       margin-bottom: 5rem; }
+
+.explore {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../images/nat-4.jpg);
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  padding: 20rem 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .explore > * {
+    transform: skewY(7deg); }
+  .explore-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    transform: all 0.3 ease-in-out;
+    padding: 2.5rem;
+    box-shadow: 0, 1.5ren, 4rem, rgba(40, 180, 133, 0.8); }
+    .explore-box:hover {
+      transform: translateY(-1.7rem) scale(1.05);
+      box-shadow: 0, 1.5rem, 4rem, rgba(255, 255, 255, 0.8); }
+  .explore i {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
 
 .tour {
   background-color: #f7f7f7;
