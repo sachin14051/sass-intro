@@ -16,19 +16,19 @@
 
 .col-6 {
   width: calc(100% * 6 / 12);
-  flex: 0 0 calc(100% *6 / 12); }
+  flex: 0 0 calc(100% * 6 / 12); }
 
 .col-4 {
   width: calc(100% * 4 / 12);
-  flex: 0 0 calc(100% *4 / 12); }
+  flex: 0 0 calc(100% * 4 / 12); }
 
 .col-9 {
   width: calc(100% * 9 / 12);
-  flex: 0 0 calc(100% *9 / 12); }
+  flex: 0 0 calc(100% * 9 / 12); }
 
 .col-3 {
   width: calc(100% * 3 / 12);
-  flex: 0 0 calc(100% *3 / 12); }
+  flex: 0 0 calc(100% * 3 / 12); }
 
 @keyframes moveright {
   0% {
@@ -48,6 +48,12 @@
 
 .text-center {
   text-align: center; }
+
+.text-capitalize {
+  text-transform: capitalize; }
+
+.text-uppecase {
+  text-transform: uppecase; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -74,7 +80,7 @@
     margin-bottom: 2rem; }
 
 .btn, .btn:link, .btn:visited {
-  padding: 1rem 4rem;
+  padding: 1.5rem 4rem;
   cursor: pointer;
   text-decoration: none;
   border: 0px;
@@ -120,6 +126,11 @@
     transform: translateY(-0.5rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.btn-green {
+  background-color: green;
+  color: white;
+  margin-top: 8rem; }
+
 .composition {
   position: relative; }
   .composition-img {
@@ -143,6 +154,88 @@
       left: 20%; }
   .composition:hover .composition-img:not(:hover) {
     transform: scale(0.8); }
+
+.card {
+  height: 52rem;
+  position: relative;
+  padding: 2.5rem;
+  font-size: 2.5rem; }
+  .card-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 0.8s ease-in-out; }
+    .card-side-front {
+      background-color: #fff; }
+    .card-side-back {
+      background-color: #ff7730;
+      transform: perspective(150rem) rotateY(180deg); }
+      .card-side-back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card-side-back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card-side-back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card:hover .card-side-back {
+    transform: perspective(150rem) rotateY(0); }
+  .card-img {
+    height: 23rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-clip: polygon(0 0, 0 100%, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .card-img-1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../images/nat-5.jpg"); }
+    .card-img-2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../images/nat-6.jpg"); }
+    .card-img-3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../images/nat-7.jpg"); }
+  .card-heading {
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-transform: uppercase;
+    width: 70%;
+    font-size: 2.8rem;
+    text-align: right; }
+    .card-heading-span {
+      font-weight: 300;
+      padding: .5rem 1.5rem;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone; }
+      .card-heading-span-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card-heading-span-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card-heading-span-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card-details {
+    padding: 3rem; }
+    .card-details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card-details ul li {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-transform: capitalize; }
+        .card-details ul li:not(:last-child) {
+          border-bottom: 1px solid #777; }
+  .card-price {
+    color: #fff;
+    margin-bottom: 8rem;
+    margin-top: 8rem; }
+    .card-price-only {
+      text-transform: uppercase; }
+    .card-price-details {
+      font-size: 6rem;
+      font-weight: 300; }
 
 .header {
   height: 95vh;
@@ -211,6 +304,11 @@
     -webkit-background-clip: text;
     color: transparent; }
 
+.popular {
+  padding: 25rem 0 15rem;
+  background-color: #f7f7f7;
+  margin-top: -10rem; }
+
 .tour {
   background-color: #f7f7f7;
   margin-top: -30rem;
@@ -224,7 +322,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
 
 body {
   padding: 3rem;
